@@ -19,7 +19,7 @@ pipeline {
 				git_status="$(git status)"
 				readarray -t lines < <(echo "$git_status")
 				echo "${lines[0]}"
-                                if [ "${lines[0]}" == "On branch master" ]
+                                if [ "${lines[0]}" == "On branch testing" ]
                                 then
                                         git pull https://fahim001-bot:rehman001@github.com/fahim001-bot/testing.git
                                 else
