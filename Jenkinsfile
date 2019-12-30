@@ -14,7 +14,7 @@ pipeline {
 		stage ('GIT Status') {
 
 			steps {
-				sh '''
+				sh '''#!/bin/bash
 				cd /var/www/html/testing/testing/
 				git_status="$(git status)"
 				readarray -t lines < <(echo "$git_status")
