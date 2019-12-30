@@ -15,6 +15,7 @@ pipeline {
 
 			steps {
 				sh '''#!/bin/bash
+				ssh rebel-0031@192.168.10.158
 				cd /var/www/html/testing/testing/
 				git_status="$(git status)"
 				readarray -t lines < <(echo "$git_status")
