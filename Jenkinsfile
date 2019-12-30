@@ -23,7 +23,7 @@ pipeline {
                                 then
                                         git pull https://fahim001-bot:rehman001@github.com/fahim001-bot/testing.git
                                 else
-                                        echo "Please verify the brach again"
+                                        echo "Please verify the branch again"
                                 fi
 				'''
 			}
