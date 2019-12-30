@@ -13,7 +13,6 @@ pipeline {
 		}
 	}
 
-	stages {
 		stage ('GIT Status') {
 
 			steps {
@@ -24,9 +23,7 @@ pipeline {
 				'''
 			}
 		}
-	}
 
-	stages {
 		stage ('Build') {
 
 			steps {
@@ -41,5 +38,4 @@ pipeline {
 			}
 		}	
 	
-	}
 }
