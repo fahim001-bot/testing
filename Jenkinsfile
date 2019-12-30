@@ -11,7 +11,6 @@ pipeline {
 				'''
 			}
 		}
-	}
 
 		stage ('GIT Status') {
 
@@ -37,5 +36,5 @@ pipeline {
 				'''
 			}
 		}	
-	
+	}	
 }
